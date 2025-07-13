@@ -1,0 +1,59 @@
+# Doxyfile for liteMQ
+
+PROJECT_NAME           = liteMQ
+PROJECT_BRIEF          = "A lightweight, socket-based pub/sub messaging tool in C"
+PROJECT_LOGO           =
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+
+# Source code settings
+INPUT                  = . \
+                         tests/
+FILE_PATTERNS          = *.c \
+                         *.h
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */minunit.h
+
+# Doxygen settings
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# HTML output settings
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+HTML_EXTRA_STYLESHEET  =
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+
+# Man page output settings
+GENERATE_MAN           = NO
+
+# RTF output settings
+GENERATE_RTF           = NO
+
+# XML output settings
+GENERATE_XML           = NO
+
+# LaTeX output settings
+GENERATE_LATEX         = NO
+
+# Graph settings
+HAVE_DOT               = NO
+
+# Preprocessor settings
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+
+# Author settings
+QUIET                  = YES
+WARN_NO_PARAMDOC       = NO
