@@ -1,6 +1,37 @@
 # liteMQ
 
-A lightweight, socket-based pub/sub messaging tool written in C.
+**liteMQ: A Lightweight C-based Pub/Sub Messaging Tool**
+
+  liteMQ is a highly efficient, socket-based publish/subscribe messaging system implemented entirely in C.
+
+  Designed for minimal footprint and high performance, it offers a simple API for message exchange between
+
+  publishers and subscribers.
+
+ Key Features:
+ 
+   * Ultra-Lightweight: Built with standard C libraries, ensuring a small memory footprint and fast execution.
+
+   * Socket-Based Pub/Sub: Enables real-time message broadcasting to multiple subscribers over TCP/IP.
+
+   * Configurable Persistence:
+
+       * No Persistence: Messages are delivered only to active subscribers.
+
+       * Persist All: All messages are saved and delivered to new subscribers upon connection.
+
+       * Timed Persistence: Messages are saved for a configurable duration, with automatic cleanup of expired
+
+         messages.
+
+   * Simple API: Straightforward command-line interfaces for both publishing and subscribing.
+
+   * Robust & Tested: Includes improved error handling and comprehensive unit test coverage for reliability.
+
+  liteMQ is ideal for embedded systems, IoT devices, or any application where a full-fledged message broker is
+
+  overkill, and a fast, simple, and customizable messaging solution is required.
+
 
 ## Features
 
